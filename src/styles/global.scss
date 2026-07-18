@@ -1,0 +1,44 @@
+@use './variables.scss' as *;
+@use './reset.scss' as *;
+
+/* Estilos globales */
+main {
+  flex: 1;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Utilidades comunes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: $secondary;
+}
+
+.mt-1 {
+  margin-top: $spacing-md;
+}
+
+.mt-2 {
+  margin-top: $spacing-lg;
+}
+
+.mb-1 {
+  margin-bottom: $spacing-md;
+}
+
+.mb-2 {
+  margin-bottom: $spacing-lg;
+}
