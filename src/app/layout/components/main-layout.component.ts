@@ -1,16 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from '../../shared/components/header.component';
+import { ButtonDirective } from 'primeng/button';
 
 @Component({
   selector: 'app-main-layout',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent],
+  imports: [ButtonDirective],
   template: `
-    <app-header></app-header>
-    <main class="main-content">
-      <router-outlet></router-outlet>
-    </main>
+    <button pButton severity="primary" rounded>Check</button>
   `,
   styles: [`
     .main-content {
@@ -21,4 +17,4 @@ import { HeaderComponent } from '../../shared/components/header.component';
     }
   `],
 })
-export class MainLayoutComponent {}
+export class MainLayoutComponent { }

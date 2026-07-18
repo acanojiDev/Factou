@@ -1,6 +1,3 @@
 export const environment = {
-  production: false,
-  apiUrl: 'http://localhost:3000/api',
-  appName: 'Factou',
-  version: '1.0.0',
-};
+  PRIMEUI_LICENSE_KEY: '',
+}
